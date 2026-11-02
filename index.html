@@ -155,18 +155,18 @@
         <div id="Projects">
             <div class="pt-8 pb-1.5 flex flex-wrap gap-3 font-bold text-lg" role="group"
                 aria-label="Project categories">
-                <button id="research-projects-button" type="button" aria-controls="research-projects"
-                    aria-pressed="true" class="cursor-pointer border-2 border-white px-2 py-1.5 hover:bg-white hover:text-black
-                        aria-pressed:bg-white aria-pressed:text-black active:translate-x-0.5 active:translate-y-0.5">
-                    RESEARCH PROJECTS
-                </button>
                 <button id="software-projects-button" type="button" aria-controls="software-projects"
-                    aria-pressed="false" class="cursor-pointer border-2 border-white px-2 py-1.5 hover:bg-white hover:text-black
+                    aria-pressed="true" class="cursor-pointer border-2 border-white px-2 py-1.5 hover:bg-white hover:text-black
                         aria-pressed:bg-white aria-pressed:text-black active:translate-x-0.5 active:translate-y-0.5">
                     SOFTWARE PROJECTS
                 </button>
+                <button id="research-projects-button" type="button" aria-controls="research-projects"
+                    aria-pressed="false" class="cursor-pointer border-2 border-white px-2 py-1.5 hover:bg-white hover:text-black
+                        aria-pressed:bg-white aria-pressed:text-black active:translate-x-0.5 active:translate-y-0.5">
+                    RESEARCH PROJECTS
+                </button>
             </div>
-            <div id="research-projects" role="region" aria-labelledby="research-projects-button">
+            <div id="research-projects" role="region" aria-labelledby="research-projects-button" hidden>
                 <div>
                     <div class="flex gap-2">
                         <strong>- </strong>
@@ -252,7 +252,7 @@
                     </div>
                 </div>
             </div>
-            <div id="software-projects" role="region" aria-labelledby="software-projects-button" hidden>
+            <div id="software-projects" role="region" aria-labelledby="software-projects-button">
                 <div>
                     <div class="flex gap-2">
                         <strong>- </strong>
