@@ -11,9 +11,9 @@
 </head>
 
 <body class="flex flex-col min-h-screen items-center bg-black font-mono">
-    <div class="w-full max-w-3xl py-5 px-3 bg-black text-white 
+    <div class="w-full max-w-3xl py-5 px-3 bg-black text-white
             [&_td]:border-2 [&_th]:border-2 [&_td]:p-3 [&_th]:p-3">
-        <table class="w-full border-collapse border-2 border-white">
+        <table class="hidden sm:table w-full border-collapse border-2 border-white">
             <tbody>
                 <tr>
                     <td rowspan="3" class="w-58.5 align-middle p-2!">
@@ -39,6 +39,32 @@
                 </tr>
             </tbody>
         </table>
+
+        <header class="grid grid-cols-[168px_minmax(0,1fr)] border-2 border-white text-sm sm:hidden">
+            <div class="p-3">
+                <img src="./assets/images/profile.png" alt="Znyd's profile photo" width="1254" height="1254"
+                    class="block h-auto w-36">
+            </div>
+            <div class="min-w-0 py-3 pr-3">
+                <h1 class="text-xl font-bold leading-snug">
+                    <span class="mb-1 block text-sm font-normal">Znyd /</span>
+                    Jonayed Kader Nabil
+                </h1>
+                <div class="mt-2 flex flex-wrap gap-x-2 gap-y-1 text-sm">
+                    <span class="whitespace-nowrap">[<a href="https://github.com/znydd" class="text-blue-400 hover:underline"
+                            target="_blank" rel="noopener noreferrer">GitHub</a>]</span>
+                    <span class="whitespace-nowrap">[<span class="text-blue-400">X</span>]</span>
+                    <span class="whitespace-nowrap">[<span class="text-blue-400">LinkedIn</span>]</span>
+                </div>
+            </div>
+            <p class="col-span-2 border-t-2 border-white p-3">
+                I really like to train-serve-integrate smart &amp; cheap ai models that help humans
+            </p>
+            <div class="col-span-2 grid grid-cols-[minmax(0,1fr)_max-content] border-t-2 border-white">
+                <p class="p-3">Fast &amp; Cheap AI == Actually Useful AI</p>
+                <p class="border-l-2 border-white p-3">Dhaka,<br>Bangladesh 🇧🇩</p>
+            </div>
+        </header>
 
         <!-- Navigation -->
         <nav class="mt-8 flex flex-wrap gap-3 font-bold" aria-label="Portfolio sections">
@@ -117,8 +143,8 @@
             <div class="pb-1 text-lg">
                 <img src="./assets/images/qoarq-logo.svg" alt="" width="24" height="24"
                     class="mr-2 inline-block size-6 align-middle"><strong>Qoarq</strong> - <strong>Founding
-                    Engineer</strong> (April 2026 -
-                Present)
+                    Engineer</strong>
+                <span class="block sm:inline">(April 2026 - Present)</span>
             </div>
             <div class="pl-3">
                 <div class="text-sm flex gap-2">
@@ -153,15 +179,15 @@
 
         <!-- Projects-->
         <div id="Projects">
-            <div class="pt-8 pb-1.5 flex flex-wrap gap-3 font-bold text-lg" role="group"
+            <div class="pt-8 pb-1.5 grid grid-cols-2 gap-2 font-bold text-xs sm:flex sm:flex-wrap sm:gap-3 sm:text-lg" role="group"
                 aria-label="Project categories">
                 <button id="software-projects-button" type="button" aria-controls="software-projects"
-                    aria-pressed="true" class="cursor-pointer border-2 border-white px-2 py-1.5 hover:bg-white hover:text-black
+                    aria-pressed="true" class="min-h-11 cursor-pointer border-2 border-white px-2 py-1.5 hover:bg-white hover:text-black
                         aria-pressed:bg-white aria-pressed:text-black active:translate-x-0.5 active:translate-y-0.5">
                     SOFTWARE PROJECTS
                 </button>
                 <button id="research-projects-button" type="button" aria-controls="research-projects"
-                    aria-pressed="false" class="cursor-pointer border-2 border-white px-2 py-1.5 hover:bg-white hover:text-black
+                    aria-pressed="false" class="min-h-11 cursor-pointer border-2 border-white px-2 py-1.5 hover:bg-white hover:text-black
                         aria-pressed:bg-white aria-pressed:text-black active:translate-x-0.5 active:translate-y-0.5">
                     RESEARCH PROJECTS
                 </button>
