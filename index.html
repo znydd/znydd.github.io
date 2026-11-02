@@ -10,7 +10,7 @@
     <script src="./assets/main.js" defer></script>
 </head>
 
-<body class="flex flex-col min-h-screen items-center bg-red-500 font-mono">
+<body class="flex flex-col min-h-screen items-center bg-black font-mono">
     <div class="w-full max-w-3xl py-5 px-3 bg-black text-white 
             [&_td]:border-2 [&_th]:border-2 [&_td]:p-3 [&_th]:p-3">
         <table class="w-full border-collapse border-2 border-white">
@@ -23,8 +23,8 @@
                     <td colspan="2" class="text-2xl font-bold">
                         Znyd/Jonayed Kader Nabil
                         <div class="mt-2 flex flex-wrap gap-3 text-sm font-normal">
-                            <span>[<a href="https://github.com/znydd"
-                                    class="text-blue-400 hover:underline">GitHub</a>]</span>
+                            <span>[<a href="https://github.com/znydd" class="text-blue-400 hover:underline"
+                                    target="_blank" rel="noopener noreferrer">GitHub</a>]</span>
                             <span>[<span class="text-blue-400">Twitter/X</span>]</span>
                             <span>[<span class="text-blue-400">LinkedIn</span>]</span>
                         </div>
@@ -34,27 +34,22 @@
                     <td colspan="2">I really like to train-serve-integrate smart & cheap ai models that help humans</td>
                 </tr>
                 <tr>
-                    <td>I am working on multimodal ai that can act fast</td>
+                    <td>Fast & Cheap AI == Actually Useful AI</td>
                     <td class="w-48">I live in Dhaka,<br>Bangladesh 🇧🇩</td>
                 </tr>
             </tbody>
         </table>
 
-        <!-- Navigation Button -->
-        <div class="mt-8 flex flex-wrap gap-3 font-bold" role="group" aria-label="Portfolio sections">
-            <button type="button" class="cursor-pointer border-2 border-white px-2 py-1.5 hover:bg-white hover:text-black
+        <!-- Navigation -->
+        <nav class="mt-8 flex flex-wrap gap-3 font-bold" aria-label="Portfolio sections">
+            <a href="#Projects" class="cursor-pointer border-2 border-white px-2 py-1.5 hover:bg-white hover:text-black
                     active:translate-x-0.5 active:translate-y-0.5">
-                RESEARCH
-            </button>
-            <button type="button" class="cursor-pointer border-2 border-white px-2 py-1.5 hover:bg-white hover:text-black
-                    active:translate-x-0.5 active:translate-y-0.5">
+                PROJECTS
+            </a>
+            <button type="button" disabled class="cursor-not-allowed border-2 border-white px-2 py-1.5">
                 BLOG
             </button>
-            <button type="button" class="cursor-pointer border-2 border-white px-2 py-1.5 hover:bg-white hover:text-black
-                    active:translate-x-0.5 active:translate-y-0.5">
-                PROJECT
-            </button>
-        </div>
+        </nav>
 
         <!-- Education Section -->
         <div class="pt-12 pb-1.5 font-bold text-xl">EDUCATION:</div>
@@ -64,28 +59,286 @@
         </div>
 
         <!-- Current Projects I am working on -->
-        <div class="pt-8 pb-1.5 font-bold text-xl">ONGOING WORKS:</div>
-        <div>[1]</div>
-        <div>[2]</div>
+        <div id="ongoing-works">
+            <div class="pt-8 pb-1.5 font-bold text-xl">ONGOING WORKS:</div>
+            <div>
+                <div class="flex gap-2">
+                    <strong>- </strong>
+                    <div class="flex flex-col ">
+                        <div>
+                            <strong>Float Crawl</strong>
+                            <span class="text-sm">[<a href="https://github.com/ZentResearch/float-crawl"
+                                    class="text-blue-400 hover:underline" aria-label="Float Crawl on GitHub"
+                                    target="_blank" rel="noopener noreferrer">GitHub</a>]</span>
+                        </div>
+                        <div class="text-sm">
+                            Turn your messy documents into structured data to use with your AI agent.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pt-2">
+                <div class="flex gap-2">
+                    <strong>- </strong>
+                    <div class="flex flex-col">
+                        <div>
+                            <strong>Bornik</strong>
+                            <span class="text-sm">[<a href="https://github.com/ZentResearch/bornik"
+                                    class="text-blue-400 hover:underline" aria-label="Bornik on GitHub" target="_blank"
+                                    rel="noopener noreferrer">GitHub</a>]</span>
+                        </div>
+                        <div class="text-sm">
+                            Bengali speech-to-text model focused on regional dialects.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pt-2">
+                <div class="flex gap-2">
+                    <strong>- </strong>
+                    <div class="flex flex-col">
+                        <div>
+                            <strong>Pure Vision</strong>
+                            <span class="text-sm">[<a href="https://github.com/ZentResearch/pure-vision"
+                                    class="text-blue-400 hover:underline" aria-label="Pure Vision on GitHub"
+                                    target="_blank" rel="noopener noreferrer">GitHub</a>]</span>
+                        </div>
+                        <div class="text-sm">
+                            Training a transformer with only visual tokens, including text rendered as images.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <!-- Experience -->
-        <div class="pt-8 pb-1.5 font-bold text-xl">EXPERIENCE:</div>
-        <div class="pb-90">[1]</div>
+        <div id="Experience">
+            <div class="pt-8 pb-1.5 font-bold text-xl">EXPERIENCE:</div>
+            <div class="pb-1 text-lg">
+                <img src="./assets/images/qoarq-logo.svg" alt="" width="24" height="24"
+                    class="mr-2 inline-block size-6 align-middle"><strong>Qoarq</strong> - <strong>Founding
+                    Engineer</strong> (April 2026 -
+                Present)
+            </div>
+            <div class="pl-3">
+                <div class="text-sm flex gap-2">
+                    <strong>- </strong>
+                    <div>Architected and built the backend, database, real-time
+                        messaging, notifications, CI/CD pipeline and improved UI perf of an agency platform.
+                        [<a href="https://imran.qoarq.com/" class="text-blue-400 hover:underline" target="_blank"
+                            rel="noopener noreferrer" aria-label="Agency platform website">Link</a>]<br>
+                    </div>
+                </div>
+            </div>
+            <div class="pl-3 pt-2">
+                <div class="text-sm flex gap-2">
+                    <strong>- </strong>
+                    <div>Built a school website with notice publishing system
+                        without a database or
+                        backend to achieve $0 maintenance cost.
+                        [<a href="https://knsc.vercel.app/" class="text-blue-400 hover:underline" target="_blank"
+                            rel="noopener noreferrer" aria-label="School website">Link</a>]<br>
+                    </div>
+                </div>
+            </div>
+            <div class="pl-3 pt-2">
+                <div class="text-sm flex gap-2">
+                    <strong>- </strong>
+                    <div>Designed the core architecture and development workflows for
+                        an AI-assisted learning platform with interactive SVG animations. Currently in development.<br>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <!-- Projects-->
-        <div class="pt-8 pb-1.5 font-bold text-xl">PROJECTS:</div>
-        <div>[1]</div>
+        <div id="Projects">
+            <div class="pt-8 pb-1.5 flex flex-wrap gap-3 font-bold text-lg" role="group"
+                aria-label="Project categories">
+                <button id="research-projects-button" type="button" aria-controls="research-projects"
+                    aria-pressed="true" class="cursor-pointer border-2 border-white px-2 py-1.5 hover:bg-white hover:text-black
+                        aria-pressed:bg-white aria-pressed:text-black active:translate-x-0.5 active:translate-y-0.5">
+                    RESEARCH PROJECTS
+                </button>
+                <button id="software-projects-button" type="button" aria-controls="software-projects"
+                    aria-pressed="false" class="cursor-pointer border-2 border-white px-2 py-1.5 hover:bg-white hover:text-black
+                        aria-pressed:bg-white aria-pressed:text-black active:translate-x-0.5 active:translate-y-0.5">
+                    SOFTWARE PROJECTS
+                </button>
+            </div>
+            <div id="research-projects" role="region" aria-labelledby="research-projects-button">
+                <div>
+                    <div class="flex gap-2">
+                        <strong>- </strong>
+                        <div class="flex flex-col">
+                            <div class="text-lg">
+                                <strong>Video Mammoth</strong>
+                                <span class="text-sm">[<a href="https://github.com/ZentResearch/video-mammoth"
+                                        class="text-blue-400 hover:underline" target="_blank"
+                                        rel="noopener noreferrer">GitHub</a>]</span>
+                            </div>
+                            <div class="text-sm">
+                                It is an upgrade and generalization of my undergrad thesis
+                                <span class="text-sm">[<a href="https://github.com/znydd/edu-cut"
+                                        class="text-blue-400 hover:underline" target="_blank"
+                                        rel="noopener noreferrer">EduCut</a>]</span>
+                                which was about detecting and removing irrelevant/distracting parts from
+                                long educational lectures.
+                                But on [<a href="https://github.com/ZentResearch/video-mammoth"
+                                    class="text-blue-400 hover:underline" target="_blank"
+                                    rel="noopener noreferrer">Video-Mammoth</a>]
+                                we are trying to scale test time compute on very small VLMs for long-horizon video
+                                understanding and QA, which will be used as an RL environment to enhance
+                                the model's in-context learning capability.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pt-2">
+                    <div class="flex gap-2">
+                        <strong>- </strong>
+                        <div class="flex flex-col">
+                            <div class="text-lg">
+                                <strong>Chaotic Intelligence</strong>
+                                <span class="text-sm">[<a href="https://github.com/ZentResearch/chaotic-intelligence"
+                                        class="text-blue-400 hover:underline"
+                                        aria-label="Chaotic Intelligence on GitHub" target="_blank"
+                                        rel="noopener noreferrer">GitHub</a>]</span>
+                            </div>
+                            <div class="text-sm">
+                                Implemented and trained a text-to-image latent diffusion model with a ~72M-parameter
+                                U-Net
+                                from scratch which can generate all kinds of geometrical shapes from text instructions,
+                                frozen VAE, CLIP and DDIM sampling were used.<br>
+                                Current goal is to add flow-matching and a few new one-step generation methods.
 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pt-2">
+                    <div class="flex gap-2">
+                        <strong>- </strong>
+                        <div class="flex flex-col">
+                            <div class="text-lg">
+                                <strong>Meow-former</strong>
+                                <span class="text-sm">[<a href="https://github.com/znydd/meow-former"
+                                        class="text-blue-400 hover:underline" aria-label="Meow-former on GitHub"
+                                        target="_blank" rel="noopener noreferrer">GitHub</a>]</span>
+                            </div>
+                            <div class="text-sm">
+                                Implemented a 12-layer GPT-2 architecture in PyTorch with causal multi-head attention,
+                                positional
+                                embeddings, and autoregressive text generation.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pt-2">
+                    <div class="flex gap-2">
+                        <strong>- </strong>
+                        <div class="flex flex-col">
+                            <div class="text-lg">
+                                <strong>Khudrograd</strong>
+                                <span class="text-sm">[<a href="https://github.com/znydd/khudrograd"
+                                        class="text-blue-400 hover:underline" aria-label="Khudrograd on GitHub"
+                                        target="_blank" rel="noopener noreferrer">GitHub</a>]</span>
+                            </div>
+                            <div class="text-sm">
+                                Built a NumPy-based autograd engine from scratch with computational graphs, reverse-mode
+                                differentiation, and modular neural network layers.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="software-projects" role="region" aria-labelledby="software-projects-button" hidden>
+                <div>
+                    <div class="flex gap-2">
+                        <strong>- </strong>
+                        <div class="flex flex-col">
+                            <div class="text-lg">
+                                <img src="./assets/images/meet-when-logo.png" alt="" width="24" height="24"
+                                    class="mr-2 inline-block size-6 align-middle"><strong>Meet When</strong>
+                                <span class="text-sm">[<a href="https://github.com/znydd/meet-when"
+                                        class="text-blue-400 hover:underline" aria-label="Meet When on GitHub"
+                                        target="_blank" rel="noopener noreferrer">GitHub</a>]</span>
+                            </div>
+                            <div class="text-sm">
+                                An offline-first PWA for BRACU students to share class routines and find common free
+                                time,
+                                with local storage and no signup.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pt-2">
+                    <div class="flex gap-2">
+                        <strong>- </strong>
+                        <div class="flex flex-col">
+                            <div class="text-lg">
+                                <img src="./assets/images/copy-gif-logo.png" alt="" width="24" height="24"
+                                    class="mr-2 inline-block size-6 align-middle"><strong>Copy Gif</strong>
+                                <span class="text-sm">[<a href="https://github.com/znydd/copy-gif"
+                                        class="text-blue-400 hover:underline" aria-label="Copy Gif on GitHub"
+                                        target="_blank" rel="noopener noreferrer">GitHub</a>]</span>
+                            </div>
+                            <div class="text-sm">
+                                A Chrome extension that downloads GIFs from Google Images previews with one click.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pt-2">
+                    <div class="flex gap-2">
+                        <strong>- </strong>
+                        <div class="flex flex-col">
+                            <div class="text-lg">
+                                <img src="./assets/images/founder-mode-logo.png" alt="" width="24" height="24"
+                                    class="mr-2 inline-block size-6 align-middle"><strong>Founder Mode</strong>
+                                <span class="text-sm">[<a href="https://github.com/znydd/founder-mode"
+                                        class="text-blue-400 hover:underline" aria-label="Founder Mode on GitHub"
+                                        target="_blank" rel="noopener noreferrer">GitHub</a>]</span>
+                            </div>
+                            <div class="text-sm">
+                                A Chrome extension that blocks distracting URL patterns, intercepts SPA navigation and
+                                adds friction before unblocking urls/websites.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pt-2">
+                    <div class="flex gap-2">
+                        <strong>- </strong>
+                        <div class="flex flex-col">
+                            <div class="text-lg">
+                                <strong>Bangla Trek</strong>
+                                <span class="text-sm">[<a href="https://github.com/znydd/bangla-trek"
+                                        class="text-blue-400 hover:underline" aria-label="Bangla Trek on GitHub"
+                                        target="_blank" rel="noopener noreferrer">GitHub</a>]</span>
+                                <span class="ml-2 text-xs">⭐ Selected for BRAC University Project Showcase.</span>
+                            </div>
+                            <div class="text-sm">
+                                Built a Bangladesh travel platform with destination discovery, community reviews, travel
+                                buddy
+                                trips, and an AI assistant grounded in place and review data.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- Footer-->
         <footer class="mt-12 border-t-2 border-white pt-4 text-sm">
             <div class="flex flex-wrap items-center justify-between gap-2">
                 <span>© 2026 Jonayed Kader Nabil</span>
-                <span>Contact: [<a href="mailto:znyd.main@gmail.com"
-                        class="text-blue-400 hover:underline">znyd.main@gmail.com</a>]</span>
+                <span>Contact: [<a href="mailto:znyd.mail@gmail.com" class="text-blue-400 hover:underline"
+                        target="_blank" rel="noopener noreferrer">znyd.mail@gmail.com</a>]</span>
             </div>
             <div class="mt-2">
                 Design Inspiration: [<a href="https://github.com/owickstrom/the-monospace-web/"
-                    class="text-blue-400 hover:underline">The Monospace Web</a>].
+                    class="text-blue-400 hover:underline" target="_blank" rel="noopener noreferrer">The Monospace
+                    Web</a>].
             </div>
         </footer>
     </div>
