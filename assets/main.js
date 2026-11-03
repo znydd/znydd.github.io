@@ -17,3 +17,19 @@ projectCategoryButtons.forEach((button) => {
         });
     });
 });
+
+document.querySelectorAll("#research-projects details").forEach((project) => {
+    const summary = project.querySelector("summary");
+
+    summary.addEventListener("pointerenter", (event) => {
+        if (event.pointerType === "mouse") {
+            project.open = true;
+        }
+    });
+
+    project.addEventListener("pointerleave", (event) => {
+        if (event.pointerType === "mouse") {
+            project.open = false;
+        }
+    });
+});

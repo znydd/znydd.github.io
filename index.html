@@ -48,7 +48,8 @@
             <div class="@container min-w-0 py-3 pr-3">
                 <h1 class="-mr-3 font-bold leading-snug">
                     <span class="mb-1 block text-sm font-normal">Znyd /</span>
-                    <span class="block whitespace-nowrap text-[min(1.25rem,9.6cqw)] tracking-tight">Jonayed Kader Nabil</span>
+                    <span class="block whitespace-nowrap text-[min(1.25rem,9.6cqw)] tracking-tight">Jonayed Kader
+                        Nabil</span>
                 </h1>
                 <div class="mt-2 flex flex-wrap gap-x-2 gap-y-1 text-sm">
                     <span class="whitespace-nowrap">[<a href="https://github.com/znydd"
@@ -197,34 +198,37 @@
                 <div>
                     <div class="flex gap-2">
                         <strong>- </strong>
-                        <div class="flex flex-col">
+                        <div class="min-w-0 flex flex-col">
                             <div class="text-lg">
                                 <strong>Video Mammoth</strong>
                                 <span class="text-sm">[<a href="https://github.com/ZentResearch/video-mammoth"
                                         class="text-blue-400 hover:underline" target="_blank"
                                         rel="noopener noreferrer">GitHub</a>]</span>
                             </div>
-                            <div class="text-sm">
-                                It is an upgrade and generalization of my undergrad thesis
-                                <span class="text-sm">[<a href="https://github.com/znydd/edu-cut"
-                                        class="text-blue-400 hover:underline" target="_blank"
-                                        rel="noopener noreferrer">EduCut</a>]</span>
-                                which was about detecting and removing irrelevant/distracting parts from
-                                long educational lectures.
-                                But on [<a href="https://github.com/ZentResearch/video-mammoth"
-                                    class="text-blue-400 hover:underline" target="_blank"
-                                    rel="noopener noreferrer">Video-Mammoth</a>]
-                                we are trying to scale test time compute on very small VLMs for long-horizon video
-                                understanding and QA, which will be used as an RL environment to enhance
-                                the model's in-context learning capability.
-                            </div>
+                            <details class="group text-sm">
+                                <summary class="cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+                                    <span class="font-bold group-open:hidden">
+                                        Harness for long video understanding and Q&A with small VLMs.
+                                    </span>
+                                    <span class="hidden group-open:inline">
+                                        We are trying to scale test-time compute on very small VLMs for long-horizon
+                                        video
+                                        understanding and QA, which will be used as an RL environment to enhance
+                                        the model's in-context learning capability.
+                                    </span>
+                                    <span class="mt-1 block text-xs text-blue-400 sm:hidden">
+                                        <span class="group-open:hidden">Read more ▾</span>
+                                        <span class="hidden group-open:inline">Read less ▴</span>
+                                    </span>
+                                </summary>
+                            </details>
                         </div>
                     </div>
                 </div>
                 <div class="pt-2">
                     <div class="flex gap-2">
                         <strong>- </strong>
-                        <div class="flex flex-col">
+                        <div class="min-w-0 flex flex-col">
                             <div class="text-lg">
                                 <strong>Chaotic Intelligence</strong>
                                 <span class="text-sm">[<a href="https://github.com/ZentResearch/chaotic-intelligence"
@@ -232,49 +236,116 @@
                                         aria-label="Chaotic Intelligence on GitHub" target="_blank"
                                         rel="noopener noreferrer">GitHub</a>]</span>
                             </div>
-                            <div class="text-sm">
-                                Implemented and trained a text-to-image latent diffusion model with a ~72M-parameter
-                                U-Net
-                                from scratch which can generate all kinds of geometrical shapes from text instructions,
-                                frozen VAE, CLIP and DDIM sampling were used.<br>
-                                Current goal is to add flow-matching and a few new one-step generation methods.
-
-                            </div>
+                            <details class="group text-sm">
+                                <summary class="cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+                                    <span class="font-bold group-open:hidden">
+                                        A small text-to-image diffusion model that only generate images of geometric
+                                        shapes.
+                                    </span>
+                                    <span class="hidden group-open:inline">
+                                        Implemented and trained a text-to-image latent diffusion model with a
+                                        ~72M-parameter
+                                        U-Net
+                                        from scratch which can generate all kinds of geometrical shapes from text
+                                        instructions,
+                                        frozen VAE, CLIP and DDIM sampling were used.<br>
+                                        Current goal is to add flow-matching and a few new one-step generation methods.
+                                    </span>
+                                    <span class="mt-1 block text-xs text-blue-400 sm:hidden">
+                                        <span class="group-open:hidden">Read more ▾</span>
+                                        <span class="hidden group-open:inline">Read less ▴</span>
+                                    </span>
+                                </summary>
+                            </details>
                         </div>
                     </div>
                 </div>
                 <div class="pt-2">
                     <div class="flex gap-2">
                         <strong>- </strong>
-                        <div class="flex flex-col">
+                        <div class="min-w-0 flex flex-col">
                             <div class="text-lg">
                                 <strong>Meow-former</strong>
                                 <span class="text-sm">[<a href="https://github.com/znydd/meow-former"
                                         class="text-blue-400 hover:underline" aria-label="Meow-former on GitHub"
                                         target="_blank" rel="noopener noreferrer">GitHub</a>]</span>
                             </div>
-                            <div class="text-sm">
-                                Implemented a 12-layer GPT-2 architecture in PyTorch with causal multi-head attention,
-                                positional
-                                embeddings, and autoregressive text generation.
-                            </div>
+                            <details class="group text-sm">
+                                <summary class="cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+                                    <span class="font-bold group-open:hidden">
+                                        A GPT-2-style language model built in PyTorch to generate text.
+                                    </span>
+                                    <span class="hidden group-open:inline">
+                                        Implemented a 12-layer GPT-2 architecture in PyTorch with causal multi-head
+                                        attention,
+                                        positional
+                                        embeddings, and autoregressive text generation.
+                                    </span>
+                                    <span class="mt-1 block text-xs text-blue-400 sm:hidden">
+                                        <span class="group-open:hidden">Read more ▾</span>
+                                        <span class="hidden group-open:inline">Read less ▴</span>
+                                    </span>
+                                </summary>
+                            </details>
                         </div>
                     </div>
                 </div>
                 <div class="pt-2">
                     <div class="flex gap-2">
                         <strong>- </strong>
-                        <div class="flex flex-col">
+                        <div class="min-w-0 flex flex-col">
+                            <div class="text-lg">
+                                <strong>EduCut</strong>
+                                <span class="text-xs">(Undergraduate thesis)</span>
+                                <span class="text-sm">[<a href="https://github.com/znydd/edu-cut"
+                                        class="text-blue-400 hover:underline" aria-label="EduCut on GitHub"
+                                        target="_blank" rel="noopener noreferrer">GitHub</a>]</span>
+                            </div>
+                            <details class="group text-sm">
+                                <summary class="cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+                                    <span class="font-bold group-open:hidden">
+                                        My undergraduate thesis on filtering distractions from educational lecture
+                                        videos.
+                                    </span>
+                                    <span class="hidden group-open:inline">
+                                        My undergraduate thesis focused on detecting and removing irrelevant/distracting
+                                        parts from hours long educational lectures.
+                                    </span>
+                                    <span class="mt-1 block text-xs text-blue-400 sm:hidden">
+                                        <span class="group-open:hidden">Read more ▾</span>
+                                        <span class="hidden group-open:inline">Read less ▴</span>
+                                    </span>
+                                </summary>
+                            </details>
+                        </div>
+                    </div>
+                </div>
+                <div class="pt-2">
+                    <div class="flex gap-2">
+                        <strong>- </strong>
+                        <div class="min-w-0 flex flex-col">
                             <div class="text-lg">
                                 <strong>Khudrograd</strong>
                                 <span class="text-sm">[<a href="https://github.com/znydd/khudrograd"
                                         class="text-blue-400 hover:underline" aria-label="Khudrograd on GitHub"
                                         target="_blank" rel="noopener noreferrer">GitHub</a>]</span>
                             </div>
-                            <div class="text-sm">
-                                Built a NumPy-based autograd engine from scratch with computational graphs, reverse-mode
-                                differentiation, and modular neural network layers.
-                            </div>
+                            <details class="group text-sm">
+                                <summary class="cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+                                    <span class="font-bold group-open:hidden">
+                                        A NumPy-based autograd engine for building neural networks.
+                                    </span>
+                                    <span class="hidden group-open:inline">
+                                        Built a NumPy-based autograd engine from scratch with computational graphs,
+                                        reverse-mode
+                                        differentiation, and modular neural network layers.
+                                    </span>
+                                    <span class="mt-1 block text-xs text-blue-400 sm:hidden">
+                                        <span class="group-open:hidden">Read more ▾</span>
+                                        <span class="hidden group-open:inline">Read less ▴</span>
+                                    </span>
+                                </summary>
+                            </details>
                         </div>
                     </div>
                 </div>
